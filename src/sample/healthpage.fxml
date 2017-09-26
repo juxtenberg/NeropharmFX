@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="appholder" fx:id="RootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HealthController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="326.0" layoutY="95.0" stroke="TRANSPARENT" strokeType="OUTSIDE" strokeWidth="0.0" text="ECZEMA" wrappingWidth="98.13671875">
+         <font>
+            <Font name="Lucida Sans Regular" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="79.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@btn/search.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="117.0" layoutY="75.0" prefHeight="25.0" prefWidth="126.0" promptText="SEARCH" />
+      <TextArea editable="false" layoutX="79.0" layoutY="118.0" prefHeight="359.0" prefWidth="621.0" text="&#10;ECZEMA is an inflammation of the skin characterized by reddening, swelling, bumps and crusting, &#10;followed by thickening and scaling. It is also referred to as dermatitis.&#10;According to the National Eczema Association, symptoms include:&#10;                                                                 &#10;                                                                  SYMPTOMS&#10;&#10;⦁&#9;Dry, sensitive skin                 ⦁&#9;Red, inflamed skin                ⦁&#9;Intense itching&#10;⦁&#9;Scaly areas                            ⦁&#9;Recurring rash                      ⦁&#9;Oozing and crusting&#10;⦁&#9;Rough, leathery patches       ⦁&#9;Swelling                                ⦁&#9;Dark-colored patches of skin&#10;&#10;&#10;                                                     TREATMENT &amp; MEDICATION&#10;⦁&#9;proper bathing and moisturizing routine is required.&#10;⦁&#9;taking warm (not hot) baths/showers and immediately applying a fragrance-free &#10;        moisturizer to keep the affected skin moist.&#10;⦁&#9;topical immunomodulators (TIMs)&#10;⦁&#9;Topical corticosteroids&#10;⦁&#9;Phototherapy&#10;⦁&#9;Avoiding triggers and minimizing scratching">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Pane cache="true" prefHeight="51.0" prefWidth="750.0" style="-fx-background-color: #2aa4b3;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="7.0" onAction="#getback" prefHeight="38.0" prefWidth="38.0" ripplerFill="WHITE" style="-fx-background-radius: 50; -fx-background-color: #000000;" text="←" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="304.0" layoutY="8.0" prefHeight="30.0" prefWidth="143.0" text="NEROPHARM" textFill="#fffffff5">
+               <font>
+                  <Font name="Courier New" size="26.0" />
+               </font>
+            </Label>
+            <JFXHamburger layoutX="697.0" layoutY="14.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

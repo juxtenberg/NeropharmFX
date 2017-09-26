@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane cache="true" prefHeight="51.0" prefWidth="750.0" style="-fx-background-color: #2aa4b3;">
+         <children>
+            <Label layoutX="304.0" layoutY="8.0" prefHeight="30.0" prefWidth="143.0" text="NEROPHARM" textFill="#fffffff5">
+               <font>
+                  <Font name="Courier New" size="26.0" />
+               </font>
+            </Label>
+            <JFXButton layoutY="-2.0" onAction="#goback" prefHeight="51.0" prefWidth="66.0" text="◄" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="312.0" layoutY="82.0" prefHeight="31.0" prefWidth="126.0" text="REGISTRATION">
+         <font>
+            <Font name="Segoe UI" size="17.0" />
+         </font>
+      </Label>
+      <TextField layoutX="63.0" layoutY="178.0" prefHeight="43.0" prefWidth="182.0" promptText="FIRST NAME" />
+      <TextField layoutX="245.0" layoutY="178.0" prefHeight="43.0" prefWidth="182.0" promptText="LAST NAME" />
+      <TextField layoutX="63.0" layoutY="238.0" prefHeight="43.0" prefWidth="365.0" promptText="EMAIL" />
+      <JFXCheckBox checkedColor="#128d9b" layoutX="198.0" layoutY="315.0" prefHeight="27.0" prefWidth="78.0" text="MALE" textFill="#193e46" unCheckedColor="#326a86">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox checkedColor="#99128f" layoutX="334.0" layoutY="319.0" text="FEMALE" textFill="#193e46" unCheckedColor="#326a86">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <Separator layoutX="154.0" layoutY="297.0" prefHeight="3.0" prefWidth="182.0" />
+      <Label layoutX="63.0" layoutY="316.0" prefHeight="17.0" prefWidth="78.0" text="SEX  :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField layoutX="63.0" layoutY="361.0" prefHeight="43.0" prefWidth="365.0" promptText="PROFESSION" />
+      <JFXButton buttonType="RAISED" layoutX="338.0" layoutY="457.0" prefHeight="31.0" prefWidth="90.0" ripplerFill="#00dbff" style="-fx-background-color: #2aa4b3; -fx-background-radius: 50;" text="SIGN UP" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="155.0" layoutY="350.0" prefHeight="3.0" prefWidth="182.0" />
+      <Separator layoutX="470.0" layoutY="175.0" orientation="VERTICAL" prefHeight="225.0" prefWidth="4.0" />
+      <ImageView fx:id="imageView" fitHeight="108.0" fitWidth="108.0" layoutX="554.0" layoutY="155.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/contact1.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="status" layoutX="554.0" layoutY="270.0" prefHeight="17.0" prefWidth="143.0" text="Drop Image here" />
+   </children>
+</AnchorPane>
